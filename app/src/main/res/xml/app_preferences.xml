@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="confirm_delete"
+        android:title="Confirm deletion"
+        android:summary="Ask before deleting a query"
+        android:defaultValue="true" />
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:key="wait_for_wifi"
+        android:title="WiFi only"
+        android:summary="Only send reminders once connected to WiFi"
+        android:defaultValue="false" />
+
+    <android.support.v7.preference.ListPreference
+        android:key="default_search_engine"
+        android:title="Default Search Engine"
+        android:summary="Google"
+        android:entries="@array/search_engines"
+        android:entryValues="@array/search_engines"
+        android:defaultValue="Google"/>
+
+</android.support.v7.preference.PreferenceScreen>
